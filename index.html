@@ -97,15 +97,6 @@
           "Content-Type": "application/x-www-form-urlencoded"
         },
         body: `chat_id=${chatId}&text=${encodeURIComponent(texto)}`
-      })
-      .then(response => {
-        if (response.ok) {
-          document.getElementById("contactForm").reset();
-        } else {
-          alert("Erro ao enviar mensagem.");
-        }
-      });
-    });
   </script>
 </body>
 </html>
